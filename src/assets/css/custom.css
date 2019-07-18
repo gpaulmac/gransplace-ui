@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans&display=swap');
+a:hover{
+    text-decoration: underline;
+}
+.content-wrapper, .right-side, .main-footer{
+	margin-left: 0px !important;
+	top:50px;
+    background-color: #fff;
+}
+.ngx-dropdown-container{
+    position: absolute !important;
+}
+.fixed .content-wrapper, .fixed .right-side{
+    padding-top: 88px;
+    width: 100%;
+}
+
+#pac-input,.done-button{
+    display: none;
+    visibility:hidden;
+ }
+
+ ul.selected-items > li{
+    color: #009efb !important;
+    background-color: #f2f4f8 !important;
+    padding: 5px 10px !important;
+    text-align: center;
+ }
+
+ .ngx-dropdown-button {
+    border: 1px solid #1ba0e0 !important;
+    -moz-box-shadow: 3px 3px 5px 6px #fff;
+    -webkit-box-shadow: 3px 3px 5px 6px #fff;
+    box-shadow: 3px 3px 5px 6px #fff;
+    color: black !important;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    text-align: center;
+    max-width: 160px;
+    width: 180px !important;
+    font-size: 20px;
+    height: 54px;
+}
+.maps-wrapper{
+    padding: 0;
+    height: 100%;
+    /* position: fixed; */
+}
+.ngx-dropdown-list-container li{
+    display: block;
+    padding: 8px 20px;
+    /* clear: both; */
+    /* font-weight: 500; */
+    line-height: 1.42857143;
+    color: #67757c !important;
+    white-space: nowrap;
+    font-family: "work sans"; 
+    font-size: 16px !important;
+    font-weight: 500 !important;
+
+}
+.ngx-dropdown-button span{
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "work sans"; 
+
+}
+
+
+/* ----------- Galaxy S3 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 2) {
+
+}
+ 
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mT30 {
+        line-height: 15px !important;
+        font-size: 13px !important;
+        
+    }
+    .uk-price {
+            
+        margin-left: 229px !important;
+        margin-right: 8px;
+    }  
+    .search-filter,.content-left {
+        max-width: 100% !important;
+    }
+    .listing-user-circle{
+        margin-top: -17px !important;
+    }
+    
+    .fixed-card-image {
+        max-width: 31% !important;
+    }
+    .mgLeftDetail{
+        margin-top: -27px;
+    }
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .col-md-7 {
+        flex: 0 0 40.333333% !important;
+    }
+    .listing-user-circle{
+        margin-top: 0px !important;
+    }
+    .mgLeftDetail{
+        padding-left: 42px !important;
+    }
+
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .fixed-card-image{
+        max-width: 93% !important;
+    }
+    .mgLeftDetail {
+        padding-left: 47px !important;
+    }
+    .uk-space{
+        margin-top: 52px !important;
+    }
+    .nesterly_address{
+       
+        position: relative !important;
+        top: 52px !important;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .fixed-card-image{
+        max-width: 93% !important;
+    }
+    .mgLeftDetail {
+        padding-left: 47px !important;
+    }
+    .btn-group {
+        max-width: 37% !important;
+        
+        MARGIN-LEFT: 19px !important;
+        MARGIN-RIGHT: -16px !important;
+    }
+    .btn-datepicker {
+        max-width: 46% !important;
+    }
+    .uk-space{
+        margin-top: 52px !important;
+    }
+    .nesterly_address{
+       
+        position: relative !important;
+        top: 52px !important;
+    }
+    .search-input-field{
+        width: 330px !important;
+        font-size: 18px !important;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .uk-price {
+        bottom: 54px !important;   
+        margin-left: 221px  !important;
+        
+    } 
+    .uk-space{
+        margin-top: 52px !important;
+    }
+    .nesterly_address{
+       
+        position: relative !important;
+        top: 52px !important;
+    } 
+    .search-input-field {
+        width: 366px !important;
+        font-size: 18px !important;
+        
+    }
+
+}
+
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .mT30 {
+        line-height: 14px;
+        font-size: 13px;
+        
+    }
+    .uk-price {
+            
+            margin-left: 167px;
+            margin-right: 6px;
+    }  
+  }
+  
+
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+  
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+   
+    
+  }

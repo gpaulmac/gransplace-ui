@@ -1,0 +1,20 @@
+.ngx-dropdown-button {
+    border: 1px solid #1ba0e0 !important;
+    -moz-box-shadow: 3px 3px 5px 6px #fff;
+    -webkit-box-shadow: 3px 3px 5px 6px #fff;
+    box-shadow: 3px 3px 5px 6px #fff;
+    color: black !important;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 156px;
+    width: 156px;
+}

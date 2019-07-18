@@ -1,0 +1,101 @@
+ <app-navbar></app-navbar>
+  <div class="content-wrapper cd-main-content">
+     <div class="">
+         <div class="content-left col-lg-7">
+            <div class="search-filter row">
+                    <div class="form-group col-lg-3 col-md-3 nesterly_region">
+                        <ngx-select-dropdown class="region-select" tabindex="0"   [(ngModel)]="selectCity" [options]="cityOptions"></ngx-select-dropdown>
+                          <!-- <ngx-select-dropdown (change)="selectionChanged($event)"   [(ngModel)]="selectCity" [config]="config" [options]="cityOptions"></ngx-select-dropdown> -->
+
+                    </div>
+                    <div class="form-group col-lg-8 col-md-8 nesterly_address">
+                        <svg height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true" class="w-6 h-6 fill-current octicon octicon-search search-icon absolute"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"></path></svg>
+                        <!-- <input class="search-input-field" type="text" name="address" id="address"  [(ngModel)]="address"   /> -->
+                        <input ngx-google-places-autocomplete class="search-input-field"  placeholder="Address, neighborhood, place" [options]='options' #placesRef="ngx-places" id="address"  [(ngModel)]="address"  (onAddressChange)="handleAddressChange($event)"/>
+                     </div>
+            </div>
+            <div class="search-filter row uk-space">
+
+                  <div class="form-group btn-datepicker col-lg-3 col-md-3">
+                     <div class="top-search-btn   " style="margin-right: 15px;"  id="myDatePicker">
+                        <input type="text"
+                        placeholder="Move in date"
+                        [(ngModel)]="selectedDate"
+                        (ngModelChange)="onDateChanged($event)"
+                        class="form-control mydatepicker"
+                        bsDatepicker
+                        [bsConfig]="{ isAnimated: true,dateInputFormat: 'YYYY-MM-DD' }">
+                         
+                     </div>
+                  </div>
+                 
+                  <div class="form-group btn-group col-lg-3 col-md-3">
+                         <button class="top-search-btn  ">
+                              Max rent
+                        </button>  
+                  </div>
+                  <div class="form-group btn-group col-lg-3 col-md-3">
+                        <button class="top-search-btn  ">
+                             Commute time
+                       </button>  
+                 </div>
+                 <div class="form-group btn-group col-lg-3 col-md-3">
+                     <button class="top-search-btn  ">
+                         More Filter
+                    </button>  
+                </div>
+            </div>
+            <div class="search-filter row">
+
+                  <div class="form-group btn-datepicker col-lg-3 col-md-3">
+                        <a href="javascript:void(0);"  (click)="refreshData($event)"  class="cl-filter">
+                              Clear filters
+                            </a>
+                  </div>
+
+
+            </div>
+
+            <div class="search-filter row pt-2 ">
+                  <h3 class="mT20">Explore bostone Homeshares</h3>
+            </div>
+
+            <div class="search-filter row pt-2 ">
+                  <div class="card group2 row">
+
+                     
+                     <div class="fixed-card-image col-lg-3 col-xl-6" *ngFor="let filterItem of arrProducts" >
+                            
+                           <a href="javascript:void(0);" >
+                              <img class="card-img-top" src={{filterItem.images[0]}} />
+                           </a>
+                           <span class="uk-price mT30">${{filterItem.price}} /mo</span>
+                           <div class="profiletimeline">
+                                 <div class="row">
+                                    <div class="col-3 col-lg-4 ">
+                                        <a href="javascript:void(0);" >
+                                           <img src={{filterItem.user_avatar}}   class="mT20 img-circle listing-user-circle">
+                                        </a>
+                                    </div>
+                                    <div class="col-9 col-lg-8 mgLeftDetail"><div class="mT20 ">
+                                       <h3 class="mB0"><a href="javascript:void(0);" target="_blank">
+                                      {{ filterItem.name.substring(0,18)}} ...
+                                     </a></h3>
+                                      <p class="mB0">Available {{filterItem.available_date}}</p> <p class="mB0 messageBody"><i aria-hidden="true" class="fa fa-map-marker"></i> Aspinwall Hill, Brookline</p></div></div>
+                                 </div>
+                           </div>
+                          
+                     </div>
+                  </div>
+            </div>
+           
+         </div>
+        
+         <div class="col-lg-5 pL0">
+               <div id="mapCanvas" style="height:750px; width:100%; position: fixed;z-index: 0;"></div>
+            <!-- <div id="maps"></div> -->
+            <!-- <ngx-google-map [mapType]="'ROADMAP'"  [multiplePlaces]="true"></ngx-google-map> -->
+         </div>
+      </div>
+  </div>
+ 
