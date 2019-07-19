@@ -40,6 +40,7 @@
           }
           else
           {
+            this.filterData();
             $("#myDatePicker").addClass("btn-highlight");
           }
         
@@ -86,12 +87,15 @@
           
         this.httpService.get(environment.apiUrl+'ajaxData').subscribe(
           data => {
-            
-            if(data.rooms.length>0)
+            if(data.rooms!==undefined)
             {
-              this.arrProducts = data.rooms;
-              this.renderMarker(this.arrProducts);
+              if(data.rooms.length>0)
+              {
+                this.arrProducts = data.rooms;
+                this.renderMarker(this.arrProducts);
+              }
             }
+           
           },
           (err: HttpErrorResponse) => {
             console.log (err.message);
@@ -107,7 +111,7 @@
          let splitArr =  this.address.split(",");
          this.arrProducts.filter((el)=>{
                splitArr.forEach(element => {
-                
+                                
                  if(el.neighborhood.indexOf(element)>-1)
                   {
                      return el;
@@ -189,10 +193,9 @@
               {
                 if(data.rooms.length>0)
                 {
-                    this.arrProducts = data.rooms;
-                    this.renderMarker(this.arrProducts);
+                  this.arrProducts = data.rooms;
+                  this.renderMarker(this.arrProducts);
                 }
-
               }
             
             },

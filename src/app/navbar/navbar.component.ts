@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
  
 import { ViewChild } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-navbar',
@@ -20,7 +21,24 @@ export class NavbarComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router ) { }
 
   ngOnInit() {
+
+    window.addEventListener('scroll', function(e) {
+      let last_known_scroll_position = window.scrollY;
+      console.log(last_known_scroll_position);
+      if(last_known_scroll_position>400)
+      {
+        $(".navbar-fix").addClass('nav-hightlight');
+      }
+      else
+      {
+        $(".navbar-fix").removeClass('nav-hightlight');
+      }
+    });
     
+  }
+
+  openMobileView(){
+    $(".nav-mobile-bar").toggle("showBox");
   }
 
   logout() {

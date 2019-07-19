@@ -3,6 +3,261 @@
 a:hover{
     text-decoration: underline;
 }
+
+.nav-hightlight{
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.nesterly_region{
+    width: 156px;
+}
+.content-left{
+    padding-left: 7%;
+}
+.showBox{
+    display: block !important;
+}
+.nav-mobile-hide{
+    display: flex;
+}
+
+.navbar-toggler span{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100% 100%;
+    font-size: 18px;
+   
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.navbar-toggler{
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.1);
+}
+
+.search-input-field {
+    border-radius: 4px;
+    border: 1px solid #1Ca0e0;
+    -moz-box-shadow: 3px 3px 5px 6px #fff;
+    -webkit-box-shadow: 3px 3px 5px 6px #fff;
+    box-shadow: 3px 3px 5px 6px #fff;
+    padding-left: 50px;
+   
+    font-size: 20px;
+    height: 54px;
+    font-family: "work sans"; 
+    
+    flex: 1 1 0%;
+    width: 370px;
+}
+.top-search-btn{ 
+    border: 1px solid #1ba0e0;
+    -moz-box-shadow: 3px 3px 5px 6px #fff;
+    -webkit-box-shadow: 3px 3px 5px 6px #fff;
+    box-shadow: 3px 3px 5px 6px #fff;
+    color: black;
+    font-size: 17px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 6px;
+    line-height: 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    height: 46px;
+    background-color: white;
+    text-align: center;
+    width: 170px;
+}
+.mydatepicker{
+    width: 101%;
+    height: 42px;
+    margin: 0;
+    padding: 00;
+    margin-top: -5px;
+    font-size: 17px;
+    color: black;
+    border:none;
+    text-align: center;  font-family: "work sans"; 
+    font-weight: 500;
+}
+
+.btn-datepicker{
+    /* margin-left: 15px; */
+    max-width: 27%;
+}
+.search-filter  .form-group {
+ /* max-width: 29%; */
+}
+.btn-group{
+    max-width: 22%;
+    padding: 0;
+    MARGIN-LEFT: 5px;
+    MARGIN-RIGHT: 7px;
+
+}
+.btn-group .top-search-btn{
+    width: 170px;
+}
+.nesterly_address{
+    padding-left: 12px;
+}
+.mydatepicker::placeholder{
+    color:black;
+    font-family: "work sans";
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.nesterly_address svg{
+    position: absolute;
+    color: #8795a1;
+    fill: #8795a1;
+    margin-top: 12px;
+    left: 26px;
+    font-weight: bold;
+    font-size: 24px;
+}
+.btn-highlight,.btn-highlight .mydatepicker{
+    background-color: #1ba0e0;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.pL0{
+    width: 100%;
+    padding: 0;
+}
+.cl-filter{
+    line-height: 45px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1CA0E0;
+    font-family: "work sans";
+    cursor: pointer;
+}
+.pt-2{
+    padding-left: 0.5rem !important;
+}
+.mT20{
+    /* margin-top: 20px; */
+    line-height: 30px;
+    font-size: 24px;
+    color: #455a64;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+}
+.fixed-card-image{
+    float: left;
+    padding: 0;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    margin-right: 20px;
+    max-width: 47%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 20px transparent;
+    box-shadow: 0px 5px 20px transparent;
+}
+.profiletimeline{
+    height: 172px;
+    padding: 15px;
+}
+.listing-user-circle {
+    width: 110px;
+    margin-top: 20px;
+}
+.group2 {
+    width: 700px;
+    border:none;
+    display: contents !important;
+}
+.profiletimeline p {
+    font-size: 16px;
+}
+.profiletimeline .messageBody {
+    font-size: 16px;
+}
+.profiletimeline h3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.mgLeftDetail h3{
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Work Sans", sans-serif;
+}
+.mB0 {
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+.card-img-top{
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    width: 100%;
+    height: 220px;
+}
+.group2{
+    display: flex;
+}
+.mgLeftDetail{
+    padding-left: 30px;
+}
+
+#mapCanvas{
+    height:750px; width:100%; position: fixed !important;z-index: 0;
+}
+.uk-price{
+    background-color: white;
+    position: relative;
+    bottom: 49px;
+    margin-left: 186px;
+    border-radius: 6px;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+   
+
+}
+.mT30{
+    line-height: 28px;
+    font-size: 21px;
+    color: #455a64;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.nav-mobile-bar{
+    display: none;
+}
+.navbar-toggler{
+    display: none;
+    
+}
+ 
 .content-wrapper, .right-side, .main-footer{
 	margin-left: 0px !important;
 	top:50px;
@@ -88,7 +343,257 @@ a:hover{
   and (-webkit-device-pixel-ratio: 2) {
 
 }
- 
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .navbar-brand{
+        display:flex  !important;
+        /* float: right; */
+        width: 210px !important;
+    }
+    
+    .navbar-toggler{
+        margin-right: 0;
+        margin-left: 20px;
+        float: right;
+    }
+    .navbar {
+        height: 80px !important;
+    }
+
+    .nav-mobile-bar{
+        /* display: block !important; */
+        position: absolute;
+        z-index: 2;
+        text-align: left;
+        top: 21%;
+        width: 100%;
+        text-align: left;
+        height: 230px;
+        background:white;
+    }
+    .navbar-toggler{
+        display: block !important;
+    }
+    .nav-light-items{
+        color: #4a4a4a;
+    }
+    .nav-mobile-hide{
+        display: none !important;
+    }
+    .nav-mobile-bar .nav-item{
+        margin-left:5% !important;
+    }
+    .btn-group{
+        max-width: 40% !important;
+        margin-left: 14px;
+    }
+    
+    .top-search-btn,.mydatepicker,.mydatepicker::placeholder  {
+        font-size: 14px;
+        padding: 6px;
+        line-height: 22px;
+        font-weight: 500;
+        height: 35px;
+        width: 100%;
+    }
+    input.mydatepicker {
+        height: 28px !important;
+        margin-left: 0;
+        padding-left: 11px;
+    }
+    .btn-datepicker {
+        /* margin-left: 15px; */
+        max-width: 53%;
+        font-size: 14px;
+        padding-right: 26px;
+    }
+   
+
+    .fixed-card-image{
+        max-width: 93% !important;
+    }
+    .mgLeftDetail {
+        padding-left: 47px !important;
+    }
+    .uk-space{
+        margin-top: 139px !important;
+    }
+    
+    .sign-up-btn-lg{
+        display: none;
+    }
+    .nesterly_address{
+       
+        position: relative !important;
+        top: 52px !important;
+    }
+    .search-input-field{
+        width: 270px !important;
+        font-family: 'Roboto';
+        font-size: 16px;
+    }
+    .ngx-dropdown-button{
+        max-width: 290px !important;
+        width: 270px !important;
+    }
+    .uk-space{
+        margin-top: 52px !important;
+    }
+
+    .btn-max-rent{
+        padding:0;
+        margin-left: -5px; 
+    }
+    
+    h3.mT20,.group2{
+        padding:20px;
+    }
+    .uk-price{
+        font-size: 16px;
+        width: 121px;
+        margin-left: 50%;
+        
+    }
+    .search-icon{
+        height: 21px;
+        margin-top: 18px !important;
+    }
+    .profiletimeline{
+        padding: 0;
+    }
+    .mgLeftDetail h3{
+        font-size: 18px;
+    }
+    .listing-user-circle {
+        width: 70px;
+        margin-left: 20px;
+        
+    }
+    .profiletimeline p,.messageBody {
+        font-size: 16px;    
+    }
+    .ngx-dropdown-button span{
+        font-size: 17px;
+    }
+}
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .fixed-card-image{
+        max-width: 93% !important;
+    }
+    .mgLeftDetail {
+        padding-left: 47px !important;
+    }
+    .uk-space{
+        margin-top: 52px !important;
+    }
+    .nesterly_address{
+       
+        position: relative !important;
+        top: 52px !important;
+    }
+    .ngx-dropdown-button{
+        max-width: 336px !important;
+        width: 323px !important;
+    }
+
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+    .fixed-card-image{
+        max-width: 93% !important;
+    }
+    .mgLeftDetail {
+        padding-left: 47px !important;
+    }
+    /* .btn-group {
+        max-width: 37% !important;
+        
+        MARGIN-LEFT: 19px !important;
+        MARGIN-RIGHT: -16px !important;
+    } */
+    .btn-datepicker {
+        max-width: 51% !important;
+    }
+    .uk-space{
+        margin-top: 52px !important;
+    }
+    .btn-group {
+        /* max-width: 40% !important; */
+        margin-left: 14px;
+    }
+    .nesterly_address{
+       
+        position: relative !important;
+        top: 52px !important;
+    }
+    .btn-max-rent {
+        margin-left: -5px !important;
+    }
+    .search-input-field{
+        width: 311px !important;
+        font-family: 'Roboto';
+        font-size: 16px;
+        margin-left: 2px;
+    }
+    .ngx-dropdown-button {
+        max-width: 310px !important;
+        width: 326px !important;
+        }
+}
+ /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+  .uk-price {
+      bottom: 54px !important;   
+      margin-left: 221px  !important;
+      
+  } 
+  
+  .uk-space{
+      margin-top: 52px !important;
+  }
+  .nesterly_address{
+     
+      position: relative !important;
+      top: 52px !important;
+  } 
+  .search-input-field {
+      width: 366px !important;
+      font-family: 'Roboto';
+      font-size: 16px;
+      
+  }
+  
+  .ngx-dropdown-button {
+    max-width: 384px !important;
+    width: 364px !important;
+    }
+
+}
+
   
   /* 
     ##Device = Tablets, Ipads (landscape)
@@ -130,6 +635,69 @@ a:hover{
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
+
+    
+   
+    .navbar-brand{
+        display:flex  !important;
+        float: left;
+        width: 92%   !important;
+    }
+    .navbar-toggler{
+        margin-right: 0;
+        margin-left: 20px;
+    }
+    .navbar {
+        height: 80px !important;
+    }
+
+    .navbar .col-md-7{
+        flex: 0 0 100%!important;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .nav-mobile-bar{
+        /* display: block !important; */
+        position: absolute;
+        z-index: 2;
+        text-align: left;
+        top: 10%;
+        width: 100%;
+        text-align: left;
+        height: 286px;
+        background:white;
+    }
+    .navbar-toggler{
+        display: block !important;
+    }
+    
+    .nav-light-items{
+        color: #4a4a4a;
+    }
+    .nav-light-items .nav-link{
+        color: #67757c;
+    }
+    .nav-mobile-hide{
+        display: none !important;
+    }
+    .nav-mobile-bar .nav-item{
+        margin-left:5% !important;
+    }
+      
+    .nav-item {
+        max-width: 100%;
+        flex: 100%;
+        height: 54px;
+        
+    }
+    .nav-item a{
+        height: 43px;
+        line-height: 30px;
+        margin-right: 10px;
+        font-size: 20pt;
+    }
+
     .col-md-7 {
         flex: 0 0 40.333333% !important;
     }
@@ -141,127 +709,27 @@ a:hover{
     }
 
 }
-/* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .fixed-card-image{
-        max-width: 93% !important;
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .nesterly_region{
+        max-width: 20%;
     }
-    .mgLeftDetail {
-        padding-left: 47px !important;
+    .btn-group{
+        margin:0;
     }
-    .uk-space{
-        margin-top: 52px !important;
-    }
-    .nesterly_address{
-       
-        position: relative !important;
-        top: 52px !important;
-    }
-
-}
-
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    .fixed-card-image{
-        max-width: 93% !important;
-    }
-    .mgLeftDetail {
-        padding-left: 47px !important;
-    }
-    .btn-group {
-        max-width: 37% !important;
-        
-        MARGIN-LEFT: 19px !important;
-        MARGIN-RIGHT: -16px !important;
-    }
-    .btn-datepicker {
-        max-width: 46% !important;
-    }
-    .uk-space{
-        margin-top: 52px !important;
-    }
-    .nesterly_address{
-       
-        position: relative !important;
-        top: 52px !important;
-    }
-    .search-input-field{
-        width: 330px !important;
-        font-size: 18px !important;
+    .top-search-btn{
+        width: 190px;
     }
 }
 
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .uk-price {
-        bottom: 54px !important;   
-        margin-left: 221px  !important;
-        
-    } 
-    .uk-space{
-        margin-top: 52px !important;
-    }
-    .nesterly_address{
-       
-        position: relative !important;
-        top: 52px !important;
-    } 
-    .search-input-field {
-        width: 366px !important;
-        font-size: 18px !important;
-        
-    }
-
-}
 
   
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .mT30 {
-        line-height: 14px;
-        font-size: 13px;
-        
-    }
-    .uk-price {
-            
-            margin-left: 167px;
-            margin-right: 6px;
-    }  
-  }
-  
 
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-  
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-   
-    
-  }
+
+
+ 
+
+ 
