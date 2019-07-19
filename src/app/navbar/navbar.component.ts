@@ -25,7 +25,7 @@ export class NavbarComponent implements OnInit {
     window.addEventListener('scroll', function(e) {
       let last_known_scroll_position = window.scrollY;
       console.log(last_known_scroll_position);
-      if(last_known_scroll_position>400)
+      if(last_known_scroll_position>75)
       {
         $(".navbar-fix").addClass('nav-hightlight');
       }
