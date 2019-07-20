@@ -12,7 +12,7 @@ import { ContentComponent } from './content/content.component';
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import {HttpModule} from '@angular/http';
 import { SelectDropDownModule } from 'ngx-select-dropdown'
-// import {DatepickerModule} from 'ngx-date-picker';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
 import { Directive, Component, OnInit, Input } from '@angular/core';
 
  
@@ -23,6 +23,7 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import { NgxGoogleMapModule } from 'ngx-google-map';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,8 @@ import { NgxGoogleMapModule } from 'ngx-google-map';
     NgxGoogleMapModule,
     BrowserModule,
     AppRoutingModule,
+    NgxSmartModalModule.forRoot(),
+    ModalModule.forRoot(),
     HttpModule,
     HttpClientModule,
     FormsModule,

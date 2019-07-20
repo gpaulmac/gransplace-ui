@@ -40,7 +40,7 @@
                        </button>  
                  </div>
                  <div class="form-group btn-group col-lg-3 col-md-3">
-                     <button class="top-search-btn  ">
+                     <button class="top-search-btn  " (click)="productModal.show()">
                          More Filter
                     </button>  
                 </div>
@@ -60,7 +60,7 @@
                   <h3 class="mT20">Explore bostone Homeshares</h3>
             </div>
 
-            <div class="search-filter row pt-2 "  >
+            <div class="search-filter row pt-2 " *ngIf="isProducts" >
                   <div class="card group2 row">
 
                      
@@ -92,10 +92,93 @@
          </div>
         
          <div class="col-lg-5 pL0">
-               <div id="mapCanvas" style="height:750px; width:100%; position: fixed;z-index: 0;"></div>
+               <div id="mapCanvas" #mapCanvas style="height:750px; width:100%; position: fixed;z-index: 0;"></div>
             <!-- <div id="maps"></div> -->
             <!-- <ngx-google-map [mapType]="'ROADMAP'"  [multiplePlaces]="true"></ngx-google-map> -->
          </div>
+
+         
+
+                
       </div>
   </div>
  
+
+  <div bsModal #productModal="bs-modal" class="modal fade detail-dialog" tabindex="-1" role="dialog" aria-labelledby="detail-dialog"
+    (onShown)="onShown()" (onHidden)="onHidden()">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+                          <div class="modal-header">
+                              
+                              <button type="button" class="close pull-right" (click)="productModal.hide()" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+            <div class="modal-body">
+
+                        <!-- Container Start -->
+                        <div class="col-lg-3 col-xl-12">
+                              <h4 class="header-name-filter">Listing amenities</h4>
+                        </div>
+                        <div class="product_container">
+                              <!-- Ametics -->
+
+                              <div class="col-lg-3 col-xl-4" *ngFor="let filter1 of arrFilter1" >
+                                    <div class="filter-div">
+                                          <input type="checkbox" class="checkbox-filter"  name="{{filter1.name}}" id="{{filter1.fid}}" />
+                                         <label for="filter1.fid" class="checkbox-label mT10">{{filter1.name}}</label> 
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xl-12">
+                                    <h4 class="header-name-filter">Host pets</h4>
+                        </div>
+                        <div class="product_container">
+                                    <!-- Host pets -->
+                              <div class="col-lg-3 col-xl-4" *ngFor="let filter2 of arrFilter2">
+                                    <div class="filter-div">
+                                          <input type="checkbox" class="checkbox-filter" name="{{filter2.name}}" id="{{filter2.fid}}" />
+                                          <label for="filter2.fid" class="checkbox-label mT10">{{filter2.name}}</label> 
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xl-12">
+                                    <h4 class="header-name-filter">House rules</h4>
+                        </div>
+                        <div class="product_container">
+                                    <!-- House rules -->
+                              
+                              <div class="col-lg-3 col-xl-4" *ngFor="let filter3 of arrFilter3" >
+                                    <div class="filter-div">
+                                          <input type="checkbox" class="checkbox-filter"  name="{{filter3.name}}" id="{{filter3.fid}}" />
+                                          <label for="filter3.fid" class="checkbox-label mT10">{{filter3.name}}</label>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-xl-12">
+                                    <h4 class="header-name-filter">Potential household help needed</h4>
+                        </div>
+                        <div class="product_container">
+                         
+                              
+                                          <label class="btn btn-sm btn-secondary btn-pro fontSize-dropDown-btn radio1 col-lg-3 active">
+                                                <input type="radio" name="options" (ngModelClick)="onradioChanged('noHousehold')" id="noHousehold" value="false"> No
+                                          </label>
+                                       <label class="btn btn-sm btn-secondary btn-pro fontSize-dropDown-btn radio2 col-lg-3"><input type="radio" name="options" (ngModelClick)="onradioChanged('yesHousehold')" id="yesHousehold" value="true"> Yes
+                                      </label>
+                                    
+                               
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-xl-12">
+                          <div class="product_container ">
+                          <div class="row  "><div class="col-lg-12 "><a href="#" class="pull-right btn-lg apply-but mT24">
+                                    Apply
+                                   </a> <a href="#" class="pull-right btn-lg cancel-but mT24">
+                                    Cancel
+                                   </a></div></div>
+                              </div>
+                        </div>
+            </div>
+      </div>
+</div>
+</div>

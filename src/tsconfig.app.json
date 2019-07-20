@@ -5,6 +5,9 @@
     "module": "es2015",
     "types": []
   },
+  "types": [
+    "googlemaps"
+  ],
   "exclude": [
     "src/test.ts",
     "**/*.spec.ts"

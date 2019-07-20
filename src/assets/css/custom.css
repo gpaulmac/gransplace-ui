@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto|Work+Sans&display=swap');
+@import "~ngx-smart-modal/ngx-smart-modal";
 a:hover{
     text-decoration: underline;
+}
+
+.modal {
+    z-index: 999999;
 }
 
 .nav-hightlight{
@@ -52,7 +57,9 @@ a:hover{
     color: rgba(0,0,0,0.5);
     border-color: rgba(0,0,0,0.1);
 }
-
+.pull-right{
+text-decoration: none;
+}
 .search-input-field {
     border-radius: 4px;
     border: 1px solid #1Ca0e0;
@@ -98,7 +105,186 @@ a:hover{
     text-align: center;  font-family: "work sans"; 
     font-weight: 500;
 }
+.header-name-filter{
+    color: #455a64;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 20px;
+    margin-left: -20px;
+}
+.checkbox-filter{
+    
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+    border: 1px solid #daddd8;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    
+    transition: .2s;
+}
 
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+    border: 1px solid #daddd8;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+    border: 1px solid #daddd8;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #1ca0e0;
+    border-bottom: 2px solid #1ca0e0;
+    -webkit-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -2px;
+    width: 11px;
+    height: 19px;
+}
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -8px;
+}
+
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: absolute;
+    left: -8px;
+    z-index: 11111;
+    opacity: 0;
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff !important;
+    background-color: #1ca0e0 !important;
+    border-color: #1ca0e0 !important;
+    
+
+}
+.cancel-but {
+    font-weight: 500;
+    color: #000;
+}
+.btn-lg {
+    padding: .75rem 1.5rem;
+    font-size: 1.25rem;
+}
+.btn-pro{
+    width: 195px;
+    height: 34px;
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #6c757d;
+}
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+}
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: 12px;
+    line-height: 2.5;
+    border-radius: .2rem;
+}
+.modal-header {
+    border:none;
+    padding: 0px 12px 2px 4px;
+}
+.close {
+    font-size: 2.5em;
+}
+.filter-div {
+    margin-top: 6px;
+}
+.header-name-filter {
+    margin-bottom: 15px;
+}
+.checkbox-label{
+    margin-left: 12px;
+    padding-left: 0px;
+    color: #212529;
+    height: 25px;
+    line-height: 21px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
+    z-index: 0;
+    border: 1px solid #daddd8;
+    border-radius: 1px;
+    margin-top: 2px;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.filter-div{
+    margin-bottom: 10px;
+}
 .btn-datepicker{
     /* margin-left: 15px; */
     max-width: 27%;
@@ -163,6 +349,33 @@ a:hover{
     color: #455a64;
     font-family: "Work Sans", sans-serif;
     font-weight: 600;
+}
+.modal-body{
+    margin-left: 30px;
+}
+.mT10{
+    /* margin-top: 20px; */
+    line-height: 14px;
+    font-size: 14px;
+    color: #212529;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.btn-sm {
+    padding: .25rem .5rem;
+    font-size: 16px;
+    line-height: 2.0;
+    border-radius: .2rem;
+    font-family: 'Roboto', sans-serif;
+}
+.mT24{
+    /* margin-top: 20px; */
+    line-height: 14px;
+    font-size: 20px;
+  
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    
 }
 .fixed-card-image{
     float: left;
@@ -335,7 +548,7 @@ a:hover{
 }
 
 
-/* ----------- Galaxy S3 ----------- */
+/* ----------- Galaxy S3 -----------
 
 /* Portrait and Landscape */
 @media screen 
@@ -343,7 +556,7 @@ a:hover{
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
 
-}
+} 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
 /* Portrait and Landscape */
@@ -482,6 +695,11 @@ a:hover{
     .ngx-dropdown-button span{
         font-size: 17px;
     }
+    .nav-mobile-bar {
+        top: 13% !important;
+        position: fixed !important;
+        height: 520px !important;
+    }
 }
 /* ----------- iPhone X ----------- */
 
@@ -507,6 +725,11 @@ a:hover{
     .ngx-dropdown-button{
         max-width: 336px !important;
         width: 323px !important;
+    }
+    .nav-mobile-bar {
+        top: 9% !important;
+        position: fixed !important;
+        height: 750px !important;
     }
 
 }
@@ -559,7 +782,58 @@ a:hover{
         max-width: 310px !important;
         width: 326px !important;
         }
+        .nav-mobile-bar {
+            top: 10% !important;
+            position: fixed !important;
+            height: 610px !important;
+        }
 }
+/* ----------- Google Pixel XL ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 731px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .nav-mobile-bar {
+        top: 9% !important;
+        position: fixed !important;
+        height: 680px !important;
+    }
+    .ngx-dropdown-button {
+        max-width: 353px !important;
+        width: 348px !important;
+    }
+    .search-input-field {
+        width: 348px !important;
+       
+    }
+
+}
+
+/* ----------- Google Pixel XL ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 411px) 
+  and (device-height: 823px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .nav-mobile-bar {
+        top: 9% !important;
+        position: fixed !important;
+        height: 757px !important;
+    }
+    .ngx-dropdown-button {
+        max-width: 353px !important;
+        width: 348px !important;
+    }
+    .search-input-field {
+        width: 348px !important;
+       
+    }
+
+}
+
  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
 /* Portrait and Landscape */
@@ -595,40 +869,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
 }
 
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
-  @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .mT30 {
-        line-height: 15px !important;
-        font-size: 13px !important;
-        
-    }
-    .uk-price {
-            
-        margin-left: 229px !important;
-        margin-right: 8px;
-    }  
-    .search-filter,.content-left {
-        max-width: 100% !important;
-    }
-    .listing-user-circle{
-        margin-top: -17px !important;
-    }
-    
-    .fixed-card-image {
-        max-width: 31% !important;
-    }
-    .mgLeftDetail{
-        margin-top: -27px;
-    }
-}
+ 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
@@ -708,10 +949,64 @@ and (-webkit-min-device-pixel-ratio: 3) {
     .mgLeftDetail{
         padding-left: 42px !important;
     }
+    .nav-mobile-bar {
+        top: 7% !important;
+        position: fixed !important;
+        height: 992px !important;
+    }
 
 }
+ 
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
 
-@media only screen 
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mT30 {
+        line-height: 15px !important;
+        font-size: 13px !important;
+        
+    }
+    .uk-price {
+            
+        margin-left: 229px !important;
+        margin-right: 8px;
+    }  
+    .search-filter,.content-left {
+        max-width: 100% !important;
+    }
+    .listing-user-circle{
+        margin-top: -17px !important;
+    }
+    
+    .fixed-card-image {
+        max-width: 31% !important;
+    }
+    .mgLeftDetail{
+        margin-top: -27px;
+    }
+    .nav-mobile-bar {
+       
+        top: 5% !important;
+        position: fixed !important;
+        height: 1288px !important;
+    }
+    .nesterly_region{
+        max-width: 20%;
+    }
+    .btn-group{
+        margin:0;
+    }
+    .top-search-btn{
+        width: 190px;
+    }
+}
+
+/* @media only screen 
   and (min-device-width: 1024px) 
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 2) {
@@ -724,7 +1019,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
     .top-search-btn{
         width: 190px;
     }
-}
+} */
 
 
   
